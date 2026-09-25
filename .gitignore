@@ -1,0 +1,29 @@
+# Contexto local de agentes e ferramentas; não faz parte da documentação do produto.
+/.project-context.md
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Ambientes e segredos
+.venv/
+.env
+.env.*
+!.env.example
+
+# Artefatos locais do projeto
+/data/
+/artifacts/
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE e sistema operacional
+.idea/
+.vscode/
+.DS_Store
