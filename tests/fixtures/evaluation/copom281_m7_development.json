@@ -1,0 +1,1400 @@
+[
+  {
+    "id": "PRE-01",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom decidiu reduzir a Selic para 13,75% ao ano.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Decisão e nível final coincidem com o item 18.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-02",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom decidiu reduzir a Selic para 13,50% ao ano.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "number",
+      "issue_code": "wrong_rate",
+      "hard_failure": true,
+      "rationale": "O nível final informado é 13,75%, não 13,50%.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-03",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "A pesquisa Focus indicava expectativas de inflação de 4,9% para 2026 e 4,3% para 2027.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "attribution",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Valores, períodos e atribuição à pesquisa Focus estão corretos.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-04",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "O Copom projetou inflação de 4,9% em 2026 e 4,3% em 2027.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "attribution",
+      "issue_code": "focus_as_copom",
+      "hard_failure": true,
+      "rationale": "Esses dois valores são expectativas da Focus; a projeção do Copom citada no item é outra.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-05",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "12"
+      }
+    ],
+    "candidate": "No cenário de referência, o IPCA acumulado em quatro trimestres foi projetado em 5,2% para 2026, 3,9% para 2027 e 3,2% para o primeiro trimestre de 2028.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "period",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva natureza de projeção, indicador, medida e três horizontes.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-06",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "12"
+      }
+    ],
+    "candidate": "No cenário de referência, o IPCA foi projetado em 3,9% para 2026 e 5,2% para 2027.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "period",
+      "issue_code": "swapped_periods",
+      "hard_failure": true,
+      "rationale": "Os valores de 2026 e 2027 foram trocados.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-07",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      }
+    ],
+    "candidate": "O balanço de riscos para inflação inclui riscos de alta e de baixa, com assimetria de alta.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "qualification",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva os dois lados do balanço e a assimetria altista.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-08",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      }
+    ],
+    "candidate": "A ata aponta somente riscos de alta para a inflação, sem riscos de baixa.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "negation",
+      "issue_code": "downside_risks_denied",
+      "hard_failure": true,
+      "rationale": "O item 13 inclui explicitamente riscos de baixa na página 5.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-09",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C07",
+        "page": 5,
+        "item": "16"
+      }
+    ],
+    "candidate": "O Copom não deve reagir aos efeitos primários de choques de oferta, mas deve monitorar e reagir caso os efeitos de segunda ordem se materializem.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "condition",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva negação sobre efeitos primários e condição para efeitos de segunda ordem.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-10",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C07",
+        "page": 5,
+        "item": "16"
+      }
+    ],
+    "candidate": "O Copom deve reagir imediatamente aos efeitos primários de qualquer choque de oferta.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "negation",
+      "issue_code": "primary_effect_reversal",
+      "hard_failure": true,
+      "rationale": "Inverte a orientação expressa no item 16 e elimina a condição.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-11",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C12",
+        "page": 6,
+        "item": "Tabela 1"
+      }
+    ],
+    "candidate": "Na Tabela 1, a linha do IPCA apresenta 5,2% para 2026, 3,9% para 2027 e 3,2% para o primeiro trimestre de 2028.",
+    "expected": {
+      "verdict": "passed",
+      "dimension": "table_mapping",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Linha, colunas e horizontes correspondem à tabela.",
+      "factual_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-12",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 13,75% ao ano.",
+    "evidence_override": "13,75%",
+    "expected": {
+      "verdict": "not_verified",
+      "dimension": "evidence_sufficiency",
+      "issue_code": "truncated_evidence",
+      "hard_failure": false,
+      "rationale": "O trecho fornecido contém só um número; não identifica decisão, entidade nem período.",
+      "factual_verdict": "not_verified"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-13",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C12",
+        "page": 6,
+        "item": "Tabela 1"
+      }
+    ],
+    "candidate": "Na Tabela 1, o IPCA livres apresenta 5,2% para 2026, 3,9% para 2027 e 3,2% para o primeiro trimestre de 2028.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "table_mapping",
+      "issue_code": "table_row_confusion",
+      "hard_failure": true,
+      "rationale": "A linha IPCA livres usa 4,1% em 2027; 3,9% pertence à linha IPCA.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-14",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "A ata informa que a Selic foi reduzida em 0,25 ponto percentual.",
+    "expected": {
+      "verdict": "failed",
+      "dimension": "unsupported_inference",
+      "issue_code": "unstated_cut_size",
+      "hard_failure": true,
+      "rationale": "O item 18 informa o nível final, mas não a magnitude numérica do corte.",
+      "factual_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "PRE-15",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "pre_generation",
+    "references": [
+      {
+        "fact_id": "C12",
+        "page": 6,
+        "item": "Tabela 1"
+      }
+    ],
+    "candidate": "O IPCA foi projetado em 3,2% para o primeiro trimestre de 2028.",
+    "evidence_override": "5,2  3,9  3,2",
+    "expected": {
+      "verdict": "not_verified",
+      "dimension": "evidence_sufficiency",
+      "issue_code": "truncated_table",
+      "hard_failure": false,
+      "rationale": "O recorte fornecido não identifica linha ou coluna; buscar a tabela completa antes de liberar a âncora.",
+      "factual_verdict": "not_verified"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "audience": "beginner",
+    "output_format": "analytical_text"
+  },
+  {
+    "id": "POST-01",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C10",
+        "page": 5,
+        "item": "19"
+      }
+    ],
+    "candidate": {
+      "title": "O que o Copom decidiu",
+      "synthesis": "O Comitê de Política Monetária (Copom), do Banco Central, reduziu a Selic, a taxa básica de juros, para 13,75% ao ano na reunião de setembro de 2026.",
+      "development": "A ata considera dois tipos de risco para a inflação: ela pode ficar acima ou abaixo do previsto. Na avaliação do Comitê, os riscos de alta pesavam mais. O cenário ainda tinha incertezas, por isso o Copom destacou a necessidade de cautela.",
+      "implications": "A decisão vale para aquela reunião. O Comitê informou que continuaria acompanhando novos dados e a evolução do cenário.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa, com maior peso para os de alta."
+        },
+        {
+          "fact_id": "C10",
+          "text": "A incerteza exigia cautela e acompanhamento de novas informações."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C10"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva C09, C05 e C10, explica Selic e traduz a assimetria de riscos sem prometer decisão futura.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-02",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom decidiu reduzir a Selic, a taxa básica de juros, para 14,75% ao ano.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "number",
+      "issue_code": "wrong_rate",
+      "hard_failure": true,
+      "rationale": "O texto muda o nível final de 13,75% para 14,75%.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-03",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "A ata comenta a economia e traz uma decisão sobre a Selic, a taxa básica de juros.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "coverage",
+      "issue_code": "critical_decision_omitted",
+      "hard_failure": true,
+      "rationale": "O texto não informa a redução nem o nível final da Selic, embora C09 seja obrigatório neste caso.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-04",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "12"
+      }
+    ],
+    "candidate": "A inflação observada em 2026 foi de 5,2% e em 2027 foi de 3,9%.",
+    "required_fact_ids": [
+      "C04"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "projection_status",
+      "issue_code": "projection_as_observation",
+      "hard_failure": true,
+      "rationale": "Os valores são projeções do cenário de referência, não resultados observados.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-05",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "A pesquisa Focus, que reúne expectativas de mercado, apontava inflação de 4,9% para 2026 e 4,3% para 2027. Já o Copom projetava 3,2% para o primeiro trimestre de 2028 no cenário usado em sua análise.",
+    "required_fact_ids": [
+      "C02"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "attribution",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Distingue expectativa de mercado de projeção do Copom, com horizontes corretos e explicação local de Focus.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-06",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "Segundo o Copom, suas projeções para a inflação eram 4,9% em 2026 e 4,3% em 2027.",
+    "required_fact_ids": [
+      "C02"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "attribution",
+      "issue_code": "focus_as_copom",
+      "hard_failure": true,
+      "rationale": "Atribui ao Copom valores da pesquisa Focus.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-07",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      }
+    ],
+    "candidate": "Há riscos de a inflação ficar acima ou abaixo do previsto. O Copom avaliou que, naquele momento, os riscos de alta pesavam mais.",
+    "required_fact_ids": [
+      "C05"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "qualification",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva os dois lados e a predominância dos riscos de alta em linguagem simples.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-08",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      }
+    ],
+    "candidate": "O Comitê identificou apenas riscos de alta para a inflação.",
+    "required_fact_ids": [
+      "C05"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "qualification",
+      "issue_code": "downside_risks_omitted",
+      "hard_failure": true,
+      "rationale": "Elimina riscos de baixa que integram o mesmo item.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-09",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C07",
+        "page": 5,
+        "item": "16"
+      }
+    ],
+    "candidate": "Se houver uma mudança inesperada na oferta de produtos ou serviços, o Copom não deve reagir ao impacto inicial. Deve acompanhar a situação e reagir com firmeza se efeitos adicionais sobre os preços surgirem depois.",
+    "required_fact_ids": [
+      "C07"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "condition",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Explica a distinção temporal e mantém a reação condicionada a efeitos posteriores.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-10",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C07",
+        "page": 5,
+        "item": "16"
+      }
+    ],
+    "candidate": "O Copom vai reagir imediatamente a qualquer mudança inesperada na oferta de produtos ou serviços, sem esperar para ver se ela afeta outros preços.",
+    "required_fact_ids": [
+      "C07"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "condition",
+      "issue_code": "conditional_to_certain",
+      "hard_failure": true,
+      "rationale": "Transforma condição eventual em reação certa e inclui efeitos primários.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-11",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "A ata informa que a Selic, a taxa básica de juros, caiu de 14,00% para 13,75% ao ano.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "unsupported_inference",
+      "issue_code": "unstated_cut_size",
+      "hard_failure": true,
+      "rationale": "O item 18 informa o nível final de 13,75%, mas não informa o valor anterior nem a magnitude do corte; atribuir essa comparação à ata não é sustentado.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-12",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C12",
+        "page": 6,
+        "item": "Tabela 1"
+      }
+    ],
+    "candidate": "Na tabela da ata, o Copom projetou a inflação medida pelo IPCA, um índice de preços, em 5,2% para 2026, 3,9% para 2027 e 3,2% para o primeiro trimestre de 2028. São percentuais acumulados em quatro trimestres.",
+    "required_fact_ids": [
+      "C12"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "table_mapping",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva linha, períodos, medida acumulada e natureza de projeção, explicando IPCA no trecho.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-13",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom decidiu reduzir a Selic, a taxa básica de juros, para 13,75% ao ano. Fonte: página 3, item 3 da ata.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "citation",
+      "issue_code": "wrong_source_location",
+      "hard_failure": true,
+      "rationale": "A frase é correta, mas a referência indicada não sustenta a decisão; ela está na página 5, item 18.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-14",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C08",
+        "page": 5,
+        "item": "17"
+      }
+    ],
+    "candidate": {
+      "title": "Calibração monetária e assimetria",
+      "synthesis": "O Copom reduziu a Selic para 13,75% a.a. no âmbito da estratégia de convergência inflacionária.",
+      "development": "O balanço contemplava vetores altistas e baixistas, com assimetria altista. A magnitude do ciclo de calibração será ajustada à luz da evolução do cenário.",
+      "implications": "A restrição monetária será calibrada segundo a evolução do cenário para assegurar a convergência à meta.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa com assimetria altista."
+        },
+        {
+          "fact_id": "C08",
+          "text": "A magnitude do ciclo será ajustada conforme a evolução do cenário."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C08"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "audience_adequacy",
+      "issue_code": "unexplained_jargon",
+      "hard_failure": false,
+      "rationale": "Os fatos de C09, C05 e C08 estão preservados, mas a saída para iniciantes usa Selic, a.a., vetores altistas, assimetria, calibração e convergência sem explicá-los.",
+      "factual_verdict": "passed",
+      "audience_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-15",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom decidiu reduzir a Selic, a taxa básica de juros, para 13,75% ao ano.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "not_verified",
+      "dimension": "evidence_sufficiency",
+      "issue_code": "evidence_unavailable",
+      "hard_failure": false,
+      "rationale": "O texto parece consistente, mas a evidência vinculada está indisponível; não aprovar sem verificar o trecho.",
+      "factual_verdict": "not_verified",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "evidence_availability": "unavailable",
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-16",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "intermediate",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C08",
+        "page": 5,
+        "item": "17"
+      }
+    ],
+    "candidate": {
+      "title": "Selic, riscos e próximos ajustes",
+      "synthesis": "O Copom reduziu a Selic para 13,75% ao ano.",
+      "development": "O balanço para a inflação incluía riscos de alta e de baixa, com maior peso para os de alta. São possibilidades, não resultados já ocorridos.",
+      "implications": "O tamanho dos próximos ajustes dependerá da evolução do cenário; a ata não fixa novos cortes.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa com assimetria altista."
+        },
+        {
+          "fact_id": "C08",
+          "text": "A magnitude do ciclo será ajustada conforme a evolução do cenário."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C08"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Termos usuais para intermediários; preserva riscos de ambos os lados e caráter condicional dos ajustes.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-17",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "intermediate",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C08",
+        "page": 5,
+        "item": "17"
+      }
+    ],
+    "candidate": {
+      "title": "Calibração monetária e assimetria",
+      "synthesis": "O Copom reduziu a Selic para 13,75% a.a. no âmbito da estratégia de convergência inflacionária.",
+      "development": "O balanço contemplava vetores altistas e baixistas, com assimetria altista. A magnitude do ciclo de calibração será ajustada à luz da evolução do cenário.",
+      "implications": "A restrição monetária será calibrada segundo a evolução do cenário para assegurar a convergência à meta.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa com assimetria altista."
+        },
+        {
+          "fact_id": "C08",
+          "text": "A magnitude do ciclo será ajustada conforme a evolução do cenário."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C08"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "audience_adequacy",
+      "issue_code": "excessive_unexplained_jargon",
+      "hard_failure": false,
+      "rationale": "Fatos corretos, mas a saída completa concentra jargões não explicados além dos termos comuns previstos para intermediários.",
+      "factual_verdict": "passed",
+      "audience_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-18",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "intermediate",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 14,75% ao ano.",
+    "required_fact_ids": [
+      "C09"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "number",
+      "issue_code": "wrong_rate",
+      "hard_failure": true,
+      "rationale": "Linguagem adequada; altera o nível final da Selic de 13,75% para 14,75%.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "POST-19",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "advanced",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C08",
+        "page": 5,
+        "item": "17"
+      },
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "11–12"
+      }
+    ],
+    "candidate": {
+      "title": "Decisão e condicionantes do cenário",
+      "synthesis": "O Copom reduziu a Selic para 13,75% ao ano, com a magnitude do ciclo condicionada à evolução do cenário.",
+      "development": "O balanço de riscos para a inflação inclui vetores de alta e de baixa, com assimetria de alta. O cenário de referência projeta IPCA acumulado em quatro trimestres de 5,2% em 2026, 3,9% em 2027 e 3,2% no primeiro trimestre de 2028; as hipóteses incluem a trajetória de juros da Focus e câmbio inicial de R$ 5,15 por dólar com evolução pela paridade do poder de compra.",
+      "implications": "A ata não fixa a magnitude dos próximos movimentos. Riscos e projeções são condicionais, não resultados realizados.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa com assimetria altista."
+        },
+        {
+          "fact_id": "C08",
+          "text": "A magnitude do ciclo será ajustada conforme a evolução do cenário."
+        },
+        {
+          "fact_id": "C04",
+          "text": "O cenário de referência projeta IPCA de 5,2% em 2026, 3,9% em 2027 e 3,2% no primeiro trimestre de 2028, acumulado em quatro trimestres."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C08",
+      "C04"
+    ],
+    "expected": {
+      "verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Relaciona decisão, riscos e projeções, com horizontes, hipóteses e limitações; não converte condição em promessa.",
+      "factual_verdict": "passed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-20",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "advanced",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 5,
+        "item": "18"
+      },
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13 continuação"
+      },
+      {
+        "fact_id": "C08",
+        "page": 5,
+        "item": "17"
+      }
+    ],
+    "candidate": {
+      "title": "Entenda os juros",
+      "synthesis": "A Selic é a taxa básica de juros. O Copom, comitê do Banco Central, reduziu essa taxa para 13,75% ao ano.",
+      "development": "A inflação poderia ficar acima ou abaixo do cenário esperado; o Copom deu maior peso ao risco de ficar acima. Isso é um risco, não um resultado já observado.",
+      "implications": "O tamanho dos próximos ajustes depende de como o cenário evoluir. A ata não promete novos cortes.",
+      "claims": [
+        {
+          "fact_id": "C09",
+          "text": "O Copom reduziu a Selic para 13,75% ao ano."
+        },
+        {
+          "fact_id": "C05",
+          "text": "O balanço incluía riscos de alta e baixa com assimetria altista."
+        },
+        {
+          "fact_id": "C08",
+          "text": "A magnitude do ciclo será ajustada conforme a evolução do cenário."
+        }
+      ]
+    },
+    "required_fact_ids": [
+      "C09",
+      "C05",
+      "C08"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "audience_adequacy",
+      "issue_code": "insufficient_analytical_depth",
+      "hard_failure": false,
+      "rationale": "Fatos corretos; saída completa repete definições elementares e não desenvolve relações e condicionantes na densidade prevista para avançados.",
+      "factual_verdict": "passed",
+      "audience_verdict": "failed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "full_output"
+  },
+  {
+    "id": "POST-21",
+    "dataset_version": "m7-copom281-v3",
+    "split": "development",
+    "source_id": "copom281-20260916",
+    "stage": "post_generation",
+    "audience": "advanced",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "As expectativas de inflação da pesquisa Focus são 4,9% para 2026 e 4,3% para 2027; esses números são projeções do próprio Copom.",
+    "required_fact_ids": [
+      "C02"
+    ],
+    "expected": {
+      "verdict": "failed",
+      "dimension": "attribution",
+      "issue_code": "focus_misattributed",
+      "hard_failure": true,
+      "rationale": "Linguagem adequada, mas atribui ao Copom expectativas da pesquisa Focus.",
+      "factual_verdict": "failed",
+      "audience_verdict": "passed"
+    },
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "candidate_scope": "excerpt"
+  }
+]

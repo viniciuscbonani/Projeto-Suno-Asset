@@ -1,0 +1,2 @@
+"""Fronteira HTTP da aplicação."""
+

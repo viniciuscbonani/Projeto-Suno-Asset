@@ -1,0 +1,14 @@
+{
+  "version": "m7-account-review-v1",
+  "status": "pending",
+  "reviewer": null,
+  "verified_at": null,
+  "scope_description": null,
+  "zdr_enabled": null,
+  "effective_retention_description": null,
+  "tpm_limit": null,
+  "split_input_output_limits": null,
+  "settings_evidence_description": null,
+  "accepted_for_public_copom_use": null,
+  "rationale": null
+}

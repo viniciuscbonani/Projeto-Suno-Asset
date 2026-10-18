@@ -1,4 +1,3 @@
-# Contexto local de agentes e ferramentas; não faz parte da documentação do produto.
 /.project-context.md
 
 # Python
@@ -9,21 +8,56 @@ __pycache__/
 .mypy_cache/
 .coverage
 htmlcov/
+.coverage.*
+coverage.xml
+.hypothesis/
+.tox/
+.nox/
+
+# Distribuições e metadados gerados
+build/
+dist/
+*.egg-info/
+*.egg
 
 # Ambientes e segredos
+/.aws
 .venv/
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
 
 # Artefatos locais do projeto
 /data/
 /artifacts/
+/.local/
+/.agents/
+/.codex/
+*.log
 *.db
 *.sqlite
 *.sqlite3
+*.sqlite3-*
+*.sqlite-*
+*.db-*
+
+# Comprovações de conta e relatórios gerados
+*quota-evidence*.json
+/tests/fixtures/evaluation/human-review.md
 
 # IDE e sistema operacional
 .idea/
 .vscode/
 .DS_Store
+*~
+*.swp
+*.swo
+
+# Testes do frontend
+node_modules/
+test-results/
+playwright-report/

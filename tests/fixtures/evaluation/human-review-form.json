@@ -1,0 +1,564 @@
+{
+  "version": "m7-human-review-v1",
+  "dataset_hashes": {
+    "copom281_m7_development.json": "0fa1ccef80780b492d752a4176c4fbab02ffd10b6d7c2dafacd149a2df0ccc88",
+    "copom280_m7_development.json": "f2bc579741e18670efcbbc48323dffe02390a3079c3450a46f29ef353aa337c9",
+    "copom279_m7_heldout.json": "8561f79c0739f9e4e5007ecdb6ffb9661e10193c58bf79a551bea9e2887b649a"
+  },
+  "reviewer": null,
+  "reviewed_at": null,
+  "status": "pending",
+  "cases": [
+    {
+      "id": "PRE-01",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-02",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-03",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-04",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-05",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-06",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-07",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-08",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-09",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-10",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-11",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-12",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-13",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-14",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "PRE-15",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-01",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-02",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-03",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-04",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-05",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-06",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-07",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-08",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-09",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-10",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-11",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-12",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-13",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-14",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-15",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-16",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-17",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-18",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-19",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-20",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "POST-21",
+      "source_id": "copom281-20260916",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-01",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-02",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-03",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-04",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-05",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-06",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-07",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-08",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-09",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-10",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-11",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-12",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-13",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-14",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM280-15",
+      "source_id": "copom280-20260805",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-01",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-02",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-03",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-04",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-05",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-06",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-07",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": "not_applicable",
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-08",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-09",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-10",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-11",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-12",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-13",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-14",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    },
+    {
+      "id": "COPOM279-15",
+      "source_id": "copom279-20260617",
+      "factual_verdict": null,
+      "audience_verdict": null,
+      "rationale": null,
+      "draft_agreement": null
+    }
+  ],
+  "glossary_version": "copom-education-v1",
+  "glossary": [
+    {
+      "term": "Copom",
+      "accepted": null,
+      "comment": null
+    },
+    {
+      "term": "Selic",
+      "accepted": null,
+      "comment": null
+    },
+    {
+      "term": "IPCA",
+      "accepted": null,
+      "comment": null
+    }
+  ],
+  "source_hashes": {
+    "copom281-20260916": "f03423dc25625aa14ae29c10fdacf7b4665b6714ab0667c0dc86a6f77c43665c",
+    "copom280-20260805": "36ac5012478032f9f6e72fa09c5219085fe7acd125133bbfd38aa7eb447e638b",
+    "copom279-20260617": "f9551a2c5c343c67e188669dbfa978127385bb5fce88b6e7e3e3a4762286e6ea"
+  }
+}

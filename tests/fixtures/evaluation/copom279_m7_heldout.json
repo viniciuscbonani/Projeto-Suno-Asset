@@ -1,0 +1,459 @@
+[
+  {
+    "id": "COPOM279-01",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 14,25% ao ano.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva decisão e nível final."
+    }
+  },
+  {
+    "id": "COPOM279-02",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Copom fixou a Selic em 99,99% ao ano.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "number",
+      "issue_code": "number",
+      "hard_failure": true,
+      "rationale": "Valor contradiz a decisão."
+    }
+  },
+  {
+    "id": "COPOM279-03",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "A Focus indica inflação esperada de 5,30% em 2026 e 4,10% em 2027, acima da meta.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "attribution",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Expectativas atribuídas à Focus, com períodos."
+    }
+  },
+  {
+    "id": "COPOM279-04",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "O Copom projetou inflação de 5,30% em 2026 e 4,10% em 2027, acima da meta.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "attribution",
+      "issue_code": "attribution",
+      "hard_failure": true,
+      "rationale": "Troca expectativas da Focus por projeções do Copom."
+    }
+  },
+  {
+    "id": "COPOM279-05",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "12"
+      }
+    ],
+    "candidate": "No cenário de referência, o IPCA acumulado em quatro trimestres foi projetado em 5,2% para 2026 e 3,7% para o quarto trimestre de 2027.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "projection_status",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Cenário, medida e horizonte preservados."
+    }
+  },
+  {
+    "id": "COPOM279-06",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C04",
+        "page": 4,
+        "item": "12"
+      }
+    ],
+    "candidate": "o IPCA acumulado em quatro trimestres foi observado em 5,2% para 2026 e 3,7% para o quarto trimestre de 2027.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "projection_status",
+      "issue_code": "projection_status",
+      "hard_failure": true,
+      "rationale": "Apresenta projeção como inflação já observada."
+    }
+  },
+  {
+    "id": "COPOM279-07",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "pre_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 14,25% ao ano.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "not_verified",
+      "factual_verdict": "not_verified",
+      "dimension": "evidence_sufficiency",
+      "issue_code": "evidence_sufficiency",
+      "hard_failure": false,
+      "rationale": "Evidência indisponível neste teste."
+    },
+    "evidence_availability": "unavailable"
+  },
+  {
+    "id": "COPOM279-08",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 14,25% ao ano.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "fact_support",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Trecho claro e fiel à decisão; não é texto completo.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-09",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Copom reduziu a Selic para 99,99% ao ano.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "number",
+      "issue_code": "number",
+      "hard_failure": true,
+      "rationale": "Valor da decisão alterado.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-10",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "A Focus indica inflação esperada de 5,30% em 2026 e 4,10% em 2027, acima da meta.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "attribution",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva natureza de expectativa e atribuição.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-11",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C02",
+        "page": 3,
+        "item": "3"
+      }
+    ],
+    "candidate": "O Copom projetou inflação de 5,30% em 2026 e 4,10% em 2027, acima da meta.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "attribution",
+      "issue_code": "attribution",
+      "hard_failure": true,
+      "rationale": "Troca a autoria das expectativas.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-12",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C05",
+        "page": 4,
+        "item": "13"
+      },
+      {
+        "fact_id": "C05",
+        "page": 5,
+        "item": "13"
+      }
+    ],
+    "candidate": "O Comitê considerou riscos de alta e baixa para a inflação, com maior peso para os de alta.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "passed",
+      "factual_verdict": "passed",
+      "dimension": "qualification",
+      "issue_code": null,
+      "hard_failure": false,
+      "rationale": "Preserva os dois lados e a assimetria, em linguagem acessível.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-13",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "Você deve comprar ações porque a decisão garante ganhos.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "unsupported_inference",
+      "issue_code": "unsupported_inference",
+      "hard_failure": true,
+      "rationale": "Orientação de investimento e garantia de retorno ausentes da fonte.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-14",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C09",
+        "page": 6,
+        "item": "23"
+      }
+    ],
+    "candidate": "O Comitê garantiu que continuará reduzindo os juros nas próximas reuniões.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "condition",
+      "issue_code": "condition",
+      "hard_failure": true,
+      "rationale": "Transforma decisão atual em promessa futura.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  },
+  {
+    "id": "COPOM279-15",
+    "dataset_version": "m7-corpus-v1",
+    "split": "heldout",
+    "source_id": "copom279-20260617",
+    "stage": "post_generation",
+    "audience": "beginner",
+    "output_format": "analytical_text",
+    "references": [
+      {
+        "fact_id": "C12",
+        "page": 6,
+        "item": "Tabela 1"
+      }
+    ],
+    "candidate": "A projeção do IPCA total para 2026 na tabela é 5,3%.",
+    "review": {
+      "status": "agent_draft",
+      "human_reviewer": null
+    },
+    "expected": {
+      "verdict": "failed",
+      "factual_verdict": "failed",
+      "dimension": "table_mapping",
+      "issue_code": "table_mapping",
+      "hard_failure": true,
+      "rationale": "Usa valor de outra linha da tabela como se fosse IPCA total.",
+      "audience_verdict": "passed"
+    },
+    "candidate_scope": "excerpt"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "version": "m7-corpus-v1",
+  "prepared_on": "2026-10-06",
+  "human_review_status": "pending",
+  "frozen_prompt_version": null,
+  "case_count": 66,
+  "development_case_count": 51,
+  "heldout_case_count": 15,
+  "heldout_policy": "Ata 279 não enviada ao Groq nem usada para ajustar prompts. Rótulos precisam de revisão humana antes do aceite.",
+  "sources": [
+    {
+      "id": "copom281-20260916",
+      "type": "PDF textual da ata da 281ª reunião do Copom",
+      "url": "https://www.bcb.gov.br/content/copom/atascopom/Copom281-not20260916281.pdf",
+      "sha256": "f03423dc25625aa14ae29c10fdacf7b4665b6714ab0667c0dc86a6f77c43665c",
+      "physical_pages": 6,
+      "event_dates": [
+        "2026-09-15",
+        "2026-09-16"
+      ],
+      "annotation_file": "../../../docs/fixtures/copom281-20260916-annotations.md",
+      "split": "development",
+      "local_pdf": "data/m7-corpus/Copom281.pdf",
+      "case_file": "copom281_m7_development.json"
+    },
+    {
+      "id": "copom280-20260805",
+      "url": "https://www.bcb.gov.br/content/copom/atascopom/Copom280-not20260805280.pdf",
+      "split": "development",
+      "local_pdf": "data/m7-corpus/Copom280.pdf",
+      "sha256": "36ac5012478032f9f6e72fa09c5219085fe7acd125133bbfd38aa7eb447e638b",
+      "physical_pages": 5,
+      "case_file": "copom280_m7_development.json"
+    },
+    {
+      "id": "copom279-20260617",
+      "url": "https://www.bcb.gov.br/content/copom/atascopom/Copom279-not20260617279.pdf",
+      "split": "heldout",
+      "local_pdf": "data/m7-corpus/Copom279.pdf",
+      "sha256": "f9551a2c5c343c67e188669dbfa978127385bb5fce88b6e7e3e3a4762286e6ea",
+      "physical_pages": 6,
+      "case_file": "copom279_m7_heldout.json"
+    }
+  ]
+}
